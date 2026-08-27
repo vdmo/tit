@@ -7,7 +7,6 @@ use ratatui::{
     text::{Line, Span},
     widgets::{Block, Borders, Paragraph, Wrap},
 };
-use tui_textarea::{Input, TextArea};
 
 pub struct LoremIpsum {
     paragraphs: usize,

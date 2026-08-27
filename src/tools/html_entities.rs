@@ -39,7 +39,7 @@ impl<'a> HtmlEntities<'a> {
         }
 
         self.output = match self.mode {
-            Mode::Encode => html_escape::encode_html_entity(&text).into_owned(),
+            Mode::Encode => html_escape::encode_text(&text).into_owned(),
             Mode::Decode => html_escape::decode_html_entities(&text).into_owned(),
         };
     }

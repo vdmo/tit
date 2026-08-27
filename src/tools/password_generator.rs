@@ -1,6 +1,6 @@
 use super::{Action, Category, Tool, ToolMeta};
 use crossterm::event::{KeyCode, KeyEvent, KeyModifiers};
-use rand::{distributions::Alphanumeric, Rng};
+use rand::Rng;
 use ratatui::{
     Frame,
     layout::{Constraint, Direction, Layout, Rect},

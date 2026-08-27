@@ -1,10 +1,9 @@
 use super::{Action, Category, Tool, ToolMeta};
-use crossterm::event::{KeyCode, KeyEvent, KeyModifiers};
+use crossterm::event::{KeyCode, KeyEvent};
 use ratatui::{
     Frame,
     layout::{Constraint, Direction, Layout, Rect},
     style::{Color, Style, Modifier},
-    text::{Line, Span},
     widgets::{Block, Borders, Paragraph, List, ListItem, ListState},
 };
 use tui_textarea::{Input, TextArea};

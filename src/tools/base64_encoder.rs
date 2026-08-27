@@ -1,6 +1,6 @@
 use super::{Action, Category, Tool, ToolMeta};
 use base64::{Engine as _, engine::general_purpose::STANDARD};
-use crossterm::event::{KeyCode, KeyEvent, KeyModifiers};
+use crossterm::event::{KeyCode, KeyEvent};
 use ratatui::{
     Frame,
     layout::{Constraint, Direction, Layout, Rect},

@@ -75,7 +75,7 @@ pub fn handle_cli(cmd: Commands) -> anyhow::Result<()> {
             if decode {
                 println!("{}", html_escape::decode_html_entities(&text));
             } else {
-                println!("{}", html_escape::encode_html_entity(&text));
+                println!("{}", html_escape::encode_text(&text));
             }
         }
         Commands::Hash { text } => {
